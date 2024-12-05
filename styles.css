@@ -1,0 +1,77 @@
+body {
+  margin: 0;
+  padding: 0;
+  display: grid;
+  height: 100vh;
+  grid-template-rows: auto 1fr auto;
+}
+@font-face {
+  font-family: Custom;
+  src: url(Strive.otf);
+}
+h1 {
+  background-image: linear-gradient(
+    90deg,
+    red,
+    orange,
+    yellow,
+    green,
+    cyan,
+    magenta
+  );
+  color: white;
+  font-size: 50px;
+  font-family: Custom;
+  font-weight: normal;
+  text-align: center;
+  padding: 30px;
+  margin: 0;
+  border: 2px solid red;
+  text-shadow: 3px 3px 3px black;
+}
+main {
+  padding: 8px;
+  display: grid;
+  grid-template: auto auto auto auto / auto auto;
+  background-color: antiquewhite;
+  font-weight: bold;
+  font-size: large;
+}
+p1 {
+  text-align: center;
+  background-color: antiquewhite;
+}
+p2 {
+  text-align: center;
+  font-weight: bold;
+  color: green;
+  background-color: antiquewhite;
+}
+footer {
+  padding: 10px;
+  background-color: magenta;
+  display: flex;
+  justify-content: space-between;
+}
+
+@keyframes titlespin {
+  0% {
+    rotate: 0deg;
+    font-size: 5px;
+  }
+  60% {
+    font-size: 30px;
+  }
+  100% {
+    rotate: 300deg;
+    font-size: medium;
+  }
+}
+img:hover {
+  transform: scale(1);
+}
+img {
+  max-width: 100%;
+  height: auto;
+  transform: scale(0.6);
+}

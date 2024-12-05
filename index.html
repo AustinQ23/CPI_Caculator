@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>HTML + CSS</title>
+    <link rel="stylesheet" href="styles.css" />
+    <script src="script.js" defer></script>
+  </head>
+  <body>
+    <h1>Compound Interest Caculator</h1>
+    <main>
+      Principle = <input type="text" id="principle" /> Interest Rate=<input
+        type="text"
+        id="interestRate"
+      />
+      Years = <input type="text" id="time" /> APR =<input id="compound" />
+    </main>
+    <p1><input type="button" value="Reset" onclick="clearResult()" /></p1>
+
+    <p1> The Compund Interest Earned is = </p1>
+    <p2> <output id="CPI"></output>$ </p2>
+    <p1> The Total Amount is = </p1>
+    <p2> <output id="total"></output>$ </p2>
+    <img src="pic.png"
+  </body>
+  <footer>
+    <div>© 2024</div>
+    <div>
+      Some random footer:
+      <a
+        href="https://codesandbox.io/p/sandbox/modest-bush-zs95mc?layout=%257B%2522sidebarPanel%2522%253A%2522EXPLORER%2522%252C%2522rootPanelGroup%2522%253A%257B%2522direction%2522%253A%2522horizontal%2522%252C%2522contentType%2522%253A%2522UNKNOWN%2522%252C%2522type%2522%253A%2522PANEL_GROUP%2522%252C%2522id%2522%253A%2522ROOT_LAYOUT%2522%252C%2522panels%2522%253A%255B%257B%2522type%2522%253A%2522PANEL_GROUP%2522%252C%2522contentType%2522%253A%2522UNKNOWN%2522%252C%2522direction%2522%253A%2522vertical%2522%252C%2522id%2522%253A%2522cm0ego9h700062069fvqlhtzy%2522%252C%2522sizes%2522%253A%255B100%255D%252C%2522panels%2522%253A%255B%257B%2522type%2522%253A%2522PANEL_GROUP%2522%252C%2522contentType%2522%253A%2522EDITOR%2522%252C%2522direction%2522%253A%2522horizontal%2522%252C%2522id%2522%253A%2522EDITOR%2522%252C%2522panels%2522%253A%255B%257B%2522type%2522%253A%2522PANEL%2522%252C%2522contentType%2522%253A%2522EDITOR%2522%252C%2522id%2522%253A%2522cm0ego9h700022069kac8s93d%2522%257D%255D%257D%252C%257B%2522type%2522%253A%2522PANEL_GROUP%2522%252C%2522contentType%2522%253A%2522SHELLS%2522%252C%2522direction%2522%253A%2522horizontal%2522%252C%2522id%2522%253A%2522SHELLS%2522%252C%2522panels%2522%253A%255B%257B%2522type%2522%253A%2522PANEL%2522%252C%2522contentType%2522%253A%2522SHELLS%2522%252C%2522id%2522%253A%2522cm0ego9h700032069brcqojm0%2522%257D%255D%257D%255D%257D%252C%257B%2522type%2522%253A%2522PANEL_GROUP%2522%252C%2522contentType%2522%253A%2522DEVTOOLS%2522%252C%2522direction%2522%253A%2522vertical%2522%252C%2522id%2522%253A%2522DEVTOOLS%2522%252C%2522panels%2522%253A%255B%257B%2522type%2522%253A%2522PANEL%2522%252C%2522contentType%2522%253A%2522DEVTOOLS%2522%252C%2522id%2522%253A%2522cm0ego9h700052069e7c2aewg%2522%257D%255D%257D%255D%252C%2522sizes%2522%253A%255B50%252C50%255D%257D%252C%2522tabbedPanels%2522%253A%257B%2522cm0ego9h700022069kac8s93d%2522%253A%257B%2522tabs%2522%253A%255B%257B%2522id%2522%253A%2522cm0ego9h6000120692vw1gu42%2522%252C%2522mode%2522%253A%2522permanent%2522%252C%2522type%2522%253A%2522FILE%2522%252C%2522filepath%2522%253A%2522%252Findex.html%2522%252C%2522state%2522%253A%2522IDLE%2522%252C%2522initialSelections%2522%253A%255B%257B%2522startLineNumber%2522%253A17%252C%2522startColumn%2522%253A58%252C%2522endLineNumber%2522%253A17%252C%2522endColumn%2522%253A58%257D%255D%257D%255D%252C%2522id%2522%253A%2522cm0ego9h700022069kac8s93d%2522%252C%2522activeTabId%2522%253A%2522cm0ego9h6000120692vw1gu42%2522%257D%252C%2522cm0ego9h700052069e7c2aewg%2522%253A%257B%2522tabs%2522%253A%255B%257B%2522id%2522%253A%2522cm0ego9h700042069aewizrrc%2522%252C%2522mode%2522%253A%2522permanent%2522%252C%2522type%2522%253A%2522UNASSIGNED_PORT%2522%252C%2522port%2522%253A0%257D%255D%252C%2522id%2522%253A%2522cm0ego9h700052069e7c2aewg%2522%252C%2522activeTabId%2522%253A%2522cm0ego9h700042069aewizrrc%2522%257D%252C%2522cm0ego9h700032069brcqojm0%2522%253A%257B%2522tabs%2522%253A%255B%255D%252C%2522id%2522%253A%2522cm0ego9h700032069brcqojm0%2522%257D%257D%252C%2522showDevtools%2522%253Atrue%252C%2522showShells%2522%253Afalse%252C%2522showSidebar%2522%253Atrue%252C%2522sidebarPanelSize%2522%253A15%257D"
+        >Code</a
+      >
+    </div>
+  </footer>
+</html>
