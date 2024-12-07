@@ -1,7 +1,7 @@
 {
-  "name": "html-css",
+  "name": "cpi_caculator ",
   "version": "1.0.0",
-  "description": "A template for HTML and CSS",
+  "description": "A CPI_Caculator ",
   "main": "index.html",
   "scripts": {
     "start": "serve"
