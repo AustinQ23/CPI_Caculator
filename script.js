@@ -17,14 +17,16 @@ function converter() {
   const compound = Number(compoundYearBox.value);
 
   const total =
-    Math.floor((principle * Math.pow(1 + interestRate / compound, compound * time) * 100)) / 100; //use formula to get cpi
-  if (isNaN(total)) {
-    //if the var is not a float
-    cpiOutput.textContent = "???"; //set to ?
+    principle * Math.pow(1 + interestRate / compound, compound * time);
+  const flooredTotal = Math.floor(total * 100) / 100;
+
+  if (isNaN(flooredTotal)) {
+    // If the variable is not a valid number
+    cpiOutput.textContent = "???"; // Set to ?
     totalOutput.textContent = "???";
   } else {
-    cpiOutput.textContent = (total - principle).toFixed(2); // Display cpi variable
-    totalOutput.textContent = total.toFixed(2); // Format total to 2 decimal places
+    cpiOutput.textContent = (flooredTotal - principle).toFixed(2); // Display cpi variable
+    totalOutput.textContent = flooredTotal.toFixed(2); // Format total to 2 decimal places
   }
 }
 function clearResult() {
