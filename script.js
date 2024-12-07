@@ -23,8 +23,8 @@ function converter() {
     cpiOutput.textContent = "???"; //set to ?
     totalOutput.textContent = "???";
   } else {
-    cpiOutput.textContent = total - principle; //display cpi var
-    totalOutput.textContent = total;
+    cpiOutput.textContent = (total - principle).toFixed(2); // Display cpi variable
+    totalOutput.textContent = total.toFixed(2); // Format total to 2 decimal places
   }
 }
 function clearResult() {
