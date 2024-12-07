@@ -17,7 +17,7 @@ function converter() {
   const compound = Number(compoundYearBox.value);
 
   const total =
-    principle * Math.pow(1 + interestRate / compound, compound * time); //use formula to get cpi
+    Math.floor((principle * Math.pow(1 + interestRate / compound, compound * time) * 100)) / 100; //use formula to get cpi
   if (isNaN(total)) {
     //if the var is not a float
     cpiOutput.textContent = "???"; //set to ?
